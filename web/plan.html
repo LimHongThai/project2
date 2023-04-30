@@ -12,7 +12,7 @@
         <div id="stay">
             <img src="/pics/knife.gif" alt="knife gif" width="100%">
         </div>
-        <button type="button" class="button1">Log in</button>
+        <button onclick="window.location.href = 'signup.html';" type="button" class="button1">Log in</button>
         <button type="button" class="button2">Sign up</button>
         <div class="top-left">
             <header>
@@ -46,7 +46,7 @@
             </h3>
             <hr width="80%">
             <p style="color: white;">$ 9.99</p>
-            <button type="button">Book Now</button>
+            <button onclick="window.location.href = 'signup.html';" type="button">Book Now</button>
         </div>
         <div class="diamond">
             <h2 style="color: white;">Diamond</h2>
@@ -62,7 +62,7 @@
             </h3>
             <hr width="80%">
             <p style="color: white;">$ 24.99</p>
-            <button type="button">Book Now</button>
+            <button onclick="window.location.href = 'signup.html';" type="button">Book Now</button>
         </div>
         <div class="radiant">
             <h2 style="color: white;">Radiant</h2>
@@ -80,10 +80,12 @@
             </h3>
             <hr width="80%">
             <p style="color: white;">$ 49.99</p>
-            <button type="button">Book Now</button>
+            <button onclick="window.location.href = 'signup.html';" type="button">Book Now</button>
         </div>
     </div>
         <h1 style="color: white; text-align: center;">REVIEWS</h1>
+        
+       
     <div class="review">
         <div class="reviewBox">
             <h3>Bob</h3>
@@ -133,6 +135,31 @@
 <div class="gif">
     <img src="/pics/jettt.gif" width=75% alt=" jett gif">
 </div>
+
+<script>
+    $(".carousel").owlCarousel({
+            margin: 20,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            responsive: {
+                0:{
+                items:1,
+                nav: false
+                },
+                600:{
+                items:2,
+                nav: false
+                },
+                1000:{
+                items:3,
+                nav: false
+                }
+            }
+            });
+</script>
+
 </body>
 <footer>
     <p style="font-size: 30px;">REFORMED GAMERS</p>
